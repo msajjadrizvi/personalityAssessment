@@ -1,0 +1,11 @@
+.para{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30vh;
+    color: #5748F5;
+}
+
+.back{
+    height: 100vh;
+    background-color: rgb(208, 242, 208);
+}
