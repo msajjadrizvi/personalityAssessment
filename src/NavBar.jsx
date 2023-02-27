@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from './loho.png';
 import './navbar.css'
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar() {

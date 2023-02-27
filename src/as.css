@@ -10,35 +10,71 @@
   margin-top: 50px;
 }
 
+.headd{
+  margin-top: 3vh;
+  color: #5748F5;
+  font-size: 2rem;
+}
+
 .result {
-  background-color: #E6F4F1;
+  background-color: rgb(208, 242, 208);
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 3rem;
+  margin-top: 10vh;
+  margin-right: 20vh;
+  margin-left: 20vh;
 }
 
-.bg {
-  background-color: #EFF7F6;
+.desc{
+  font-size: 1rem;
+  font-family: 'Galano Classic DEMO';
+  margin-bottom: 1rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  color:darkgreen;
+
+}
+
+.type{
+  font-size: 2.5rem;
+  font-family: 'Galano Classic DEMO';
+  margin-bottom: 3rem;
+  color:#5748F5;
+}
+
+.bg {  
+  padding: 3rem;
+  background-color: rgb(208, 242, 208);
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 20px;
+  margin-top: 10vh;
+}
+
+.ques{
+  color:darkgreen;
+  font-size: 20px;
 }
 
 button {
-  background-color: #1E555C;
+  background-color: #776bf5;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 20px;
+  border-radius: 15px;
+  padding: 11px 25px;
+  margin-top: 3rem;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #34B3A0;
+  background-color: #8d83ff;
+}
+
+.check{
+  margin-top: 3vh;
+  color: #5748F5;
+
 }
 
 input[type="radio"] {

@@ -105,14 +105,17 @@ const Assessment = () => {
 
   if (showResults) {
     return (
+      <>
+      <NavBar/>
       <div className="assessment">
-        <h1>Personality Assessment Test Results</h1>
+        <h1 className='headd'>Personality Assessment Test Results</h1>
         <div className="result">
-          <h2>Your personality type is {result.type}</h2>
-          <p>{result.description}</p>
+          <h2 className='type'>Your personality type is {result.type}</h2>
+          <p className='desc'>{result.description}</p>
           <button onClick={restartQuiz}>Start Over</button>
         </div>
       </div>
+      </>
     );
   }
 
@@ -122,19 +125,19 @@ const Assessment = () => {
     <>
       <NavBar />
       <div className="assessment">
-        <h1>Personality Assessment Test</h1>
+        <h1 className='headd'>Personality Assessment Test</h1>
         <div className="bg">
-          <p>{question.text}</p>
+          <p className='ques'>{question.text}</p>
+
           {question.answers.map((answer, index) => (
             <div key={index}>
-              <input
+              <input className='check'
                 type="radio"
                 id={`${question.id}-${index}`}
                 name={question.id}
                 value={answer.value}
                 checked={answers[question.id] === answer.value}
                 onChange={handleChange}
-                hidden
               />
 
               <label htmlFor={`${question.id}-${index}`}>{answer.text}</label>
