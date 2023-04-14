@@ -7,6 +7,7 @@ function Soon() {
         <div className='back'>
             <NavBar />
             <p className='para'> Coming Soon </p>
+            <div></div>
         </div>
     )
 }

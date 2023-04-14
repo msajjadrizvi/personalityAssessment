@@ -3,8 +3,15 @@ import { questions } from './Questions';
 import { types } from './Types';
 import './as.css';
 import NavBar from './NavBar';
+import mongoose from 'mongoose';
 
-const Assessment = () => {
+
+const UserSchema = new mongoose.Schema({
+  name: String,
+  members: [{ firstName: String, lastName: String }]
+})
+
+const Assessment = () => { 
   const [answers, setAnswers] = useState({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [showResults, setShowResults] = useState(false);
@@ -125,7 +132,7 @@ const Assessment = () => {
     <>
       <NavBar />
       <div className="assessment">
-        <h1 className='headd'>Personality Assessment Test</h1>
+        <h1 className='headd'>Personality Assessment</h1>
         <div className="bg">
           <p className='ques'>{question.text}</p>
 
