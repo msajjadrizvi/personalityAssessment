@@ -65,14 +65,17 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
     .NavigationBar-menu {
         display: none;
     }
 
     .NavigationBar-toggle {
         display: block;
-        margin-left:600px;
-        margin-top:0vh;
+        margin-left:300px;
+        margin-top:-5vh;
     }
 
     .active {
